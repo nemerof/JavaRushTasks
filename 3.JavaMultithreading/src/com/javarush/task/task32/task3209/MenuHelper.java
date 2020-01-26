@@ -64,7 +64,6 @@ public class MenuHelper {
     public static void initColorMenu(View view, JMenuBar menuBar) {
         JMenu colorMenu = new JMenu("Цвет");
         menuBar.add(colorMenu);
-
         addMenuItem(colorMenu, new StyledEditorKit.ForegroundAction("Красный", Color.red));
         addMenuItem(colorMenu, new StyledEditorKit.ForegroundAction("Оранжевый", Color.orange));
         addMenuItem(colorMenu, new StyledEditorKit.ForegroundAction("Желтый", Color.yellow));
@@ -73,6 +72,7 @@ public class MenuHelper {
         addMenuItem(colorMenu, new StyledEditorKit.ForegroundAction("Голубой", Color.cyan));
         addMenuItem(colorMenu, new StyledEditorKit.ForegroundAction("Пурпурный", Color.magenta));
         addMenuItem(colorMenu, new StyledEditorKit.ForegroundAction("Черный", Color.black));
+        addMenuItem(colorMenu, new StyledEditorKit.ForegroundAction("Background", Color.MAGENTA));
 
         colorMenu.addMenuListener(new TextEditMenuListener(view));
     }
